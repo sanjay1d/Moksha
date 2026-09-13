@@ -23,11 +23,11 @@ async def ask_agent(message: str, user: User) -> str:
 
     params = {
         "model": settings.openai_model,
-        "openai_api_key": settings.openai_api_key,
+        "api_key": settings.openai_api_key,
         "temperature": 0,
     }
     if settings.openai_base_url:
-        params["openai_api_base"] = settings.openai_base_url
+        params["base_url"] = settings.openai_base_url
 
     model = ChatOpenAI(**params)
 
