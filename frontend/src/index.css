@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Plus Jakarta Sans", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0b0e17;
+  color: #e2e8f0;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+
+.mesh-glow-1 {
+  background: radial-gradient(circle at 50% 35%, rgba(88, 86, 214, 0.18) 0%, rgba(87, 27, 193, 0.08) 45%, transparent 75%);
+}
+.mesh-glow-2 {
+  background: radial-gradient(circle at 85% 20%, rgba(123, 208, 255, 0.12) 0%, transparent 50%);
+}
+.mesh-glow-3 {
+  background: radial-gradient(circle at 15% 85%, rgba(139, 92, 246, 0.12) 0%, transparent 60%);
+}
+
+.glass-panel {
+  background-color: rgba(27, 32, 50, 0.65);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px -15px rgba(11, 14, 23, 0.7), inset 0 1px 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.glass-input {
+  background-color: rgba(11, 14, 23, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-input:focus-within {
+  border-color: #5856D6;
+  box-shadow: 0 0 0 3px rgba(88, 86, 214, 0.22);
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, #5856D6 0%, #8B5CF6 100%);
+  box-shadow: 0 8px 24px -4px rgba(88, 86, 214, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #6462e0 0%, #9569f8 100%);
+  box-shadow: 0 10px 28px -2px rgba(88, 86, 214, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.35);
+}
+
+.glass-tag {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+/* Product catalog atmospheric styling */
+.glow-ambient-top {
+  background: radial-gradient(circle 700px at 50% -100px, rgba(88, 86, 214, 0.18), transparent 75%);
+}
+.glow-ambient-card {
+  background: radial-gradient(circle 350px at 50% 0%, rgba(99, 102, 241, 0.08), transparent 80%);
+}
+.glass-nav {
+  backdrop-filter: blur(16px);
+  background-color: rgba(11, 14, 23, 0.82);
+}
+.glass-card {
+  background: linear-gradient(180deg, rgba(24, 27, 37, 0.8) 0%, rgba(16, 19, 28, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+.glass-card:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 12px 36px -10px rgba(88, 86, 214, 0.22);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.3);
+  border-radius: 9999px;
+}
+
+.ambient-glow {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(88, 86, 214, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 82% 70%, rgba(224, 169, 109, 0.06) 0%, transparent 40%);
+}
