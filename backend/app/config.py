@@ -1,12 +1,16 @@
 from typing import Optional
 
+from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env")
 
-    mongodb_url: str = "mongodb://localhost:27017"
+    mongodb_url: str = Field(
+        default="mongodb://localhost:27017",
+        validation_alias=AliasChoices("MONGODB_URI", "MONGODB_URL"),
+    )
     mongodb_db: str = "moksha_db"
     secret_key: str = "change-me"
     algorithm: str = "HS256"
