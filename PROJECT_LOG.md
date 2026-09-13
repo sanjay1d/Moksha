@@ -6,6 +6,7 @@ This is a full-stack e-commerce application built for the `UI → API → Databa
 - Frontend: `https://moksha-gray.vercel.app`
 - Backend: `https://moksha-backend-d034.onrender.com`
 - Repo: `https://github.com/sanjay1d/Moksha`
+- **Time Taken:** 1 day
 
 ---
 

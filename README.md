@@ -4,7 +4,8 @@ A dark, glassmorphic full-stack e-commerce application with React, FastAPI, Mong
 
 **Live Demo:** `https://moksha-gray.vercel.app`  
 **Backend:** `https://moksha-backend-d034.onrender.com`  
-**Repo:** `https://github.com/sanjay1d/Moksha`
+**Repo:** `https://github.com/sanjay1d/Moksha`  
+**Time Taken:** 1 day
 
 ---
 
